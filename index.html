@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar JCC</title>
+<meta name="description" content="Les prochaines sorties du jeu de cartes Pokémon en français : dates, prix conseillés et liens d'achat, mis à jour chaque matin.">
+<meta name="theme-color" content="#F3F4F9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0E1120" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Radar JCC">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wdth,wght@75..150,500..850&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --bg:#F3F4F9;--surface:#FFFFFF;--surface-2:#EBEDF5;--ink:#141729;--muted:#5A6079;--line:#DCDFEA;
+  --accent:#2F4BD6;--accent-ink:#FFFFFF;--accent-soft:#E4E8FC;
+  --ok:#1D7F55;--ok-soft:#DDF2E8;--warn:#94600F;--warn-soft:#FBEFD9;--bad:#B83A33;--bad-soft:#F9E1DF;--done:#666B83;--done-soft:#E9EAF0;
+  --new:#7A4FE0;--new-soft:#EEE7FD;
+  --holo:linear-gradient(115deg,#5B7CFA 0%,#A56BF0 28%,#46C7C9 55%,#F2B84B 80%,#5B7CFA 100%);
+  --display:"Anybody","Arial Narrow",system-ui,sans-serif;
+  --body:"Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{
+    color-scheme:dark;
+    --bg:#0E1120;--surface:#161A2D;--surface-2:#1E2339;--ink:#EBEDF7;--muted:#99A0BC;--line:#2A3050;
+    --accent:#8198FF;--accent-ink:#0E1120;--accent-soft:#232B52;
+    --ok:#5CC999;--ok-soft:#173A2C;--warn:#E7B45C;--warn-soft:#3A2D14;--bad:#F08A82;--bad-soft:#3D1F1E;--done:#9AA0B8;--done-soft:#232740;
+    --new:#B79BFF;--new-soft:#2C2350;
+  }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;
+  padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));
+  padding-block:env(safe-area-inset-top,0px) calc(48px + env(safe-area-inset-bottom,0px))}
+img{max-width:100%}
+[hidden]{display:none!important}
+.wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+a{color:var(--accent)}
+button{font:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px 24px;padding-top:24px}
+.brand{display:flex;gap:14px;align-items:center;min-width:0}
+.brand img{width:52px;height:52px;border-radius:13px;flex:none}
+.brand h1{font-family:var(--display);font-variation-settings:"wdth" 130;font-weight:800;font-size:clamp(1.6rem,4.4vw,2.3rem);line-height:1.05;margin:0;letter-spacing:-.01em}
+.brand p{margin:4px 0 0;color:var(--muted);font-size:14px;max-width:52ch}
+.side{display:flex;flex-direction:column;gap:8px;align-items:stretch;min-width:0}
+.veille{display:flex;flex-direction:column;gap:2px;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:10px 14px}
+.veille b{color:var(--ink);font-weight:600}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ok);margin-right:6px;vertical-align:1px}
+.veille.stale .dot{background:var(--warn)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:9px;padding:7px 12px;font-size:13.5px;font-weight:500;cursor:pointer}
+.btn:hover{border-color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.notice{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px;padding:12px 14px;font-size:14px;display:flex;gap:12px;align-items:flex-start;justify-content:space-between}
+.notice p{margin:0;max-width:70ch}
+.notice.offline{border-left-color:var(--warn)}
+.notice .x{border:0;background:none;color:var(--muted);font-size:20px;line-height:1;cursor:pointer;padding:0 4px}
+
+.hero{background:var(--holo);padding:2px;border-radius:18px}
+.hero-in{background:var(--surface);border-radius:16px;padding:22px 24px;display:grid;grid-template-columns:auto 1fr;gap:8px 28px;align-items:center}
+.count{font-family:var(--display);font-variation-settings:"wdth" 150;font-weight:850;font-size:clamp(3rem,11vw,5.4rem);line-height:.9;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.count small{display:block;font-family:var(--body);font-variation-settings:normal;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.hero-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.hero-body h2{font-family:var(--display);font-variation-settings:"wdth" 110;font-weight:750;font-size:clamp(1.25rem,3.2vw,1.7rem);line-height:1.15;margin:0;text-wrap:balance}
+.hero-meta{display:flex;flex-wrap:wrap;gap:6px 14px;color:var(--muted);font-size:14px;align-items:center}
+.hero-also{font-size:13px;color:var(--muted)}
+
+.bar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.chip{font-size:13px;font-weight:500;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:6px 13px;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.chip .n{font-family:var(--mono);font-size:11px;opacity:.75;margin-left:4px}
+.buy-hint{margin:-14px 0 0;font-size:13px;color:var(--muted);max-width:75ch}
+
+#calendar{display:flex;flex-direction:column;gap:24px}
+.month{display:flex;flex-direction:column;gap:10px}
+.month h3{font-family:var(--display);font-variation-settings:"wdth" 120;font-weight:750;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin:0;display:flex;align-items:baseline;gap:10px}
+.month h3 span{font-family:var(--mono);font-weight:400;font-size:12px;color:var(--muted);text-transform:none;letter-spacing:0}
+.rows{display:flex;flex-direction:column;background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.rel{display:grid;grid-template-columns:64px 1fr auto;gap:4px 18px;padding:16px 18px;border-top:1px solid var(--line);align-items:start}
+.rel:first-child{border-top:0}
+.rel-date{display:flex;flex-direction:column;align-items:center;line-height:1}
+.rel-date .d{font-family:var(--display);font-variation-settings:"wdth" 140;font-weight:800;font-size:1.9rem;font-variant-numeric:tabular-nums}
+.rel-date .wd{font-size:12px;color:var(--muted);margin-top:4px;text-transform:lowercase}
+.rel-date .range{font-family:var(--mono);font-size:10.5px;color:var(--muted);margin-top:4px;text-align:center}
+.rel-body{display:flex;flex-direction:column;gap:5px;min-width:0}
+.rel-top{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;font-size:12.5px;color:var(--muted)}
+.code{font-family:var(--mono);font-size:11.5px;font-weight:500;background:var(--surface-2);color:var(--ink);padding:1px 7px;border-radius:5px}
+.newtag{font-size:11px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;background:var(--new-soft);color:var(--new);padding:1px 8px;border-radius:999px}
+.rel h4{margin:0;font-size:1.02rem;font-weight:600;line-height:1.3;text-wrap:balance}
+.note{margin:0;color:var(--muted);font-size:14px;max-width:68ch}
+.where{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.where span{font-size:12px;border:1px solid var(--line);border-radius:6px;padding:2px 8px;color:var(--ink);background:var(--bg)}
+.where .lbl{border:0;background:none;padding:2px 0;color:var(--muted)}
+.buy{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:4px}
+.buy .lbl{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:2px}
+.shop{font-size:12.5px;font-weight:500;line-height:1.3;text-decoration:none;color:var(--accent);background:var(--accent-soft);border:1px solid transparent;padding:5px 10px;border-radius:7px;white-space:nowrap}
+.shop:hover{border-color:var(--accent)}
+.shop.direct{background:var(--accent);color:var(--accent-ink)}
+.shop.direct:hover{border-color:var(--ink)}
+.track{font-size:12.5px;color:var(--ink);text-underline-offset:3px;white-space:nowrap}
+.src{font-size:12px;color:var(--muted)}
+.src a{color:var(--muted)}
+.rel-side{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right}
+.pill{font-size:11.5px;font-weight:600;letter-spacing:.03em;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.s-officiel{background:var(--ok-soft);color:var(--ok)}
+.s-annonce{background:var(--warn-soft);color:var(--warn)}
+.s-reporte{background:var(--bad-soft);color:var(--bad)}
+.s-sorti{background:var(--done-soft);color:var(--done)}
+.price{font-family:var(--mono);font-size:14px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.was{font-size:12px;color:var(--bad)}
+
+.lower{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
+.panel{display:flex;flex-direction:column;gap:10px}
+.panel h3{font-family:var(--display);font-variation-settings:"wdth" 120;font-weight:750;font-size:1.05rem;letter-spacing:.02em;text-transform:uppercase;margin:0}
+.list{background:var(--surface);border:1px solid var(--line);border-radius:14px;display:flex;flex-direction:column}
+.li{padding:12px 16px;border-top:1px solid var(--line);display:grid;grid-template-columns:auto 1fr;gap:2px 12px;font-size:14px}
+.li:first-child{border-top:0}
+.li time{font-family:var(--mono);font-size:12px;color:var(--muted);white-space:nowrap;padding-top:2px}
+.li .k{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);grid-column:2}
+.li p,.li .buy{margin:0;grid-column:2}
+.empty{padding:16px;color:var(--muted);font-size:14px}
+.how{font-size:13.5px;color:var(--muted);display:flex;flex-direction:column;gap:6px;background:var(--surface-2);border-radius:12px;padding:14px 16px}
+.how p{margin:0;max-width:62ch}
+.state{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:22px;color:var(--muted)}
+.skel{height:84px;border-radius:14px;background:var(--surface);border:1px solid var(--line)}
+footer{font-size:12.5px;color:var(--muted);text-align:center}
+
+@media (max-width:720px){ .lower{grid-template-columns:1fr} }
+@media (max-width:560px){
+  .hero-in{grid-template-columns:1fr;padding:18px}
+  .rel{grid-template-columns:48px 1fr;padding:14px}
+  .rel-date .d{font-size:1.55rem}
+  .rel-side{grid-column:2;flex-direction:row;align-items:center;justify-content:flex-start;flex-wrap:wrap;text-align:left}
+  .side{width:100%}
+}
+@media (prefers-reduced-motion:no-preference){ .chip,.btn{transition:background-color .15s,border-color .15s} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <img src="icons/icon-192.png" alt="" width="52" height="52">
+      <div>
+        <h1>Radar JCC</h1>
+        <p>Les prochaines sorties du jeu de cartes Pokémon en français, avec les dates, les prix conseillés et où les acheter.</p>
+      </div>
+    </div>
+    <div class="side">
+      <div class="veille" id="veille" aria-live="polite"><span><span class="dot"></span><b>Veille IA</b></span><span>Chargement…</span></div>
+      <div class="actions">
+        <button type="button" class="btn" id="refresh">Actualiser</button>
+        <button type="button" class="btn primary" id="install" hidden>Installer l'appli</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="notice" id="ios-help" hidden>
+    <p><b>Installer sur iPhone :</b> dans Safari, touche le bouton Partager (le carré avec une flèche), puis « Sur l'écran d'accueil ».</p>
+    <button type="button" class="x" id="ios-close" aria-label="Fermer">×</button>
+  </div>
+  <div class="notice offline" id="offline" hidden><p id="offline-text"></p></div>
+
+  <section id="hero" aria-label="Prochaine sortie"><div class="skel" style="height:150px"></div></section>
+
+  <nav class="bar" id="filters" aria-label="Filtrer par type de produit"></nav>
+  <p class="buy-hint">Les boutons d'achat ouvrent le produit chez chaque enseigne : en bleu plein, une page produit vérifiée ; sinon, la recherche du produit sur le site. Sur Amazon, prends une offre « expédiée et vendue par Amazon » et vérifie toujours le prix avant de payer.</p>
+
+  <section id="calendar" aria-label="Calendrier des sorties"><div class="skel"></div></section>
+
+  <div class="lower">
+    <section class="panel" aria-labelledby="h-journal">
+      <h3 id="h-journal">Journal de la veille</h3>
+      <div class="list" id="journal"><div class="empty">Chargement…</div></div>
+    </section>
+    <section class="panel" aria-labelledby="h-recent">
+      <h3 id="h-recent">Sorties récentes</h3>
+      <div class="list" id="recent"><div class="empty">Chargement…</div></div>
+      <div class="how">
+        <p><b>Statuts.</b> <i>Officiel</i> : date publiée par The Pokémon Company France. <i>Annoncé</i> : date relayée par les boutiques et la presse, pas encore confirmée. <i>Reporté</i> : date décalée.</p>
+        <p>Les dates françaises tombent en général un vendredi. Les avant-premières ont lieu environ deux semaines avant une extension, dans les boutiques indépendantes participantes.</p>
+      </div>
+    </section>
+  </div>
+  <footer>Application de suivi non officielle. Pokémon et ses marques appartiennent à leurs propriétaires.</footer>
+</div>
+
+<script>
+(function(){
+  const GROUPS=[
+    {id:"all",label:"Tout"},
+    {id:"ext",label:"Extensions"},
+    {id:"box",label:"ETB et coffrets"},
+    {id:"pack",label:"Boosters, packs, decks"},
+    {id:"pre",label:"Avant-premières"}
+  ];
+  const TYPE_GROUP={"Extension":"ext","ETB":"box","Coffret":"box","Coffret Ultra-Premium":"box","Bundle":"pack","Tripack":"pack","Pack":"pack","Mini-boîtes":"pack","Deck":"pack","Display":"pack","Avant-première":"pre"};
+  const STATUS_LABEL={officiel:"Officiel",annonce:"Annoncé",reporte:"Reporté",sorti:"Sorti"};
+
+  const store={
+    get(k){ try{ return localStorage.getItem(k); }catch(e){ return null; } },
+    set(k,v){ try{ localStorage.setItem(k,v); }catch(e){} }
+  };
+  let data=null, filter="all";
+  const f0=store.get("radar-filter"); if(f0 && GROUPS.some(g=>g.id===f0)) filter=f0;
+  // "Nouveau" = changed since the previous visit
+  const prevVisit=store.get("radar-last-visit");
+  const since=prevVisit?new Date(prevVisit):null;
+
+  const $=id=>document.getElementById(id);
+  const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+  function parseDay(s){ if(!s||!/^\d{4}-\d{2}-\d{2}/.test(s)) return null; const [y,m,d]=s.slice(0,10).split("-").map(Number); return new Date(y,m-1,d); }
+  function today(){ const n=new Date(); return new Date(n.getFullYear(),n.getMonth(),n.getDate()); }
+  function daysUntil(d){ return Math.round((d-today())/86400000); }
+  const fmtLong=new Intl.DateTimeFormat("fr-FR",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  const fmtShort=new Intl.DateTimeFormat("fr-FR",{day:"numeric",month:"short"});
+  const fmtMonth=new Intl.DateTimeFormat("fr-FR",{month:"long",year:"numeric"});
+  const fmtWd=new Intl.DateTimeFormat("fr-FR",{weekday:"short"});
+  const fmtStamp=new Intl.DateTimeFormat("fr-FR",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+  function groupOf(r){ return TYPE_GROUP[r.type]||"box"; }
+  function effStatus(r){
+    const d=parseDay(r.date); const end=parseDay(r.dateEnd)||d;
+    if(r.status==="sorti") return "sorti";
+    if(end && daysUntil(end)<0 && r.status!=="reporte") return "sorti";
+    return r.status||"annonce";
+  }
+  function isNew(r){ if(!since) return false; const t=new Date(r.updatedAt||r.addedAt||0); return !isNaN(t) && t>since; }
+  function priceText(p){ if(p==null||p==="") return ""; if(typeof p==="number") return p.toFixed(2).replace(".",",")+" €"; return String(p); }
+  function sortByDate(a,b){ return (a.date||"9999").localeCompare(b.date||"9999") || String(a.name).localeCompare(String(b.name),"fr"); }
+
+  const enc=encodeURIComponent;
+  const SHOPS=[
+    {id:"fnac",label:"Fnac",url:q=>"https://www.fnac.com/SearchResult/ResultList.aspx?Search="+enc(q)},
+    {id:"amazon",label:"Amazon",url:q=>"https://www.amazon.fr/s?k="+enc(q)},
+    {id:"micromania",label:"Micromania",url:q=>"https://www.micromania.fr/on/demandware.store/Sites-Micromania-Site/fr_FR/Search-Show?q="+enc(q)},
+    {id:"leclerc",label:"E.Leclerc",url:q=>"https://www.e.leclerc/recherche?q="+enc(q)},
+    {id:"carrefour",label:"Carrefour",url:q=>"https://www.carrefour.fr/s?q="+enc(q)},
+    {id:"cultura",label:"Cultura",url:()=>"https://www.cultura.com/cartes-a-jouer/cartes-pokemon.html",title:"Rayon cartes Pokémon de Cultura"}
+  ];
+  const COMPACT=["fnac","amazon","micromania"];
+  const EVENT_LOCATOR="https://events.pokemon.com/";
+  function safeUrl(u){ try{ const x=new URL(u); return x.protocol==="https:"?x.href:null; }catch(e){ return null; } }
+  function searchQuery(r){
+    if(r.ean) return String(r.ean);
+    if(r.searchQuery) return String(r.searchQuery);
+    return "pokemon "+String(r.name||"").replace(/\([^)]*\)/g,"").replace(/\s+/g," ").trim();
+  }
+  function whereHTML(r){
+    const w=Array.isArray(r.where)?r.where:[];
+    if(!w.length) return "";
+    return `<div class="where"><span class="lbl">Où :</span>${w.map(x=>`<span>${esc(x)}</span>`).join("")}</div>`;
+  }
+  function buyHTML(r,compact){
+    if(r.type==="Avant-première"){
+      return `<div class="buy"><span class="lbl">Réserver</span><a class="shop direct" href="${EVENT_LOCATOR}" target="_blank" rel="noopener">Trouver une boutique participante ↗</a></div>`;
+    }
+    const direct=(Array.isArray(r.links)?r.links:[]).map(l=>({shop:l&&l.shop,status:l&&l.status,url:safeUrl(l&&l.url)})).filter(l=>l.url&&l.shop);
+    const q=searchQuery(r);
+    const shops=SHOPS.filter(s=>!compact||COMPACT.includes(s.id)).filter(s=>!direct.some(d=>String(d.shop).toLowerCase().includes(s.label.toLowerCase().replace("e.",""))));
+    const track=safeUrl(r.trackUrl);
+    return `<div class="buy"><span class="lbl">Acheter</span>`
+      +direct.map(d=>`<a class="shop direct" href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.shop)}${d.status?" · "+esc(d.status):""} ↗</a>`).join("")
+      +shops.map(s=>`<a class="shop" href="${esc(s.url(q))}" target="_blank" rel="noopener" title="${esc(s.title||("Rechercher sur "+s.label))}">${esc(s.label)}</a>`).join("")
+      +(track?`<a class="track" href="${esc(track)}" target="_blank" rel="noopener">Suivre les stocks ↗</a>`:"")
+      +`</div>`;
+  }
+  function srcHTML(r){
+    const u=safeUrl(r.source); if(!u) return "";
+    const name=r.sourceName||new URL(u).hostname.replace(/^www\./,"");
+    return `<span class="src">Source : <a href="${esc(u)}" target="_blank" rel="noopener">${esc(name)}</a></span>`;
+  }
+  function rowHTML(r){
+    const d=parseDay(r.date); const end=parseDay(r.dateEnd); const st=effStatus(r);
+    const dateCol=d?`<span class="d">${String(d.getDate()).padStart(2,"0")}</span><span class="wd">${esc(fmtWd.format(d))}</span>${end?`<span class="range">→ ${esc(fmtShort.format(end))}</span>`:""}`:`<span class="d">?</span><span class="wd">date à venir</span>`;
+    const prev=parseDay(r.previousDate);
+    return `<article class="rel">
+      <div class="rel-date">${dateCol}</div>
+      <div class="rel-body">
+        <div class="rel-top">${isNew(r)?`<span class="newtag">Nouveau</span>`:""}${r.code?`<span class="code">${esc(r.code)}</span>`:""}<span>${esc(r.type||"")}</span>${r.set?`<span>· ${esc(r.set)}</span>`:""}</div>
+        <h4>${esc(r.name)}</h4>
+        ${r.note?`<p class="note">${esc(r.note)}</p>`:""}
+        ${r.type==="Avant-première"?whereHTML(r):""}
+        ${buyHTML(r)}
+        ${srcHTML(r)}
+      </div>
+      <div class="rel-side"><span class="pill s-${st}">${esc(STATUS_LABEL[st]||st)}</span>${priceText(r.price)?`<span class="price">${esc(priceText(r.price))}</span>`:""}${prev?`<span class="was">prévu avant le ${esc(fmtShort.format(prev))}</span>`:""}</div>
+    </article>`;
+  }
+
+  function renderFilters(){
+    const up=data.releases.filter(r=>effStatus(r)!=="sorti");
+    $("filters").innerHTML=GROUPS.map(g=>{
+      const n=g.id==="all"?up.length:up.filter(r=>groupOf(r)===g.id).length;
+      return `<button type="button" class="chip" data-f="${g.id}" aria-pressed="${filter===g.id}">${esc(g.label)}<span class="n">${n}</span></button>`;
+    }).join("");
+  }
+  $("filters").addEventListener("click",e=>{
+    const b=e.target.closest("[data-f]"); if(!b||!data) return;
+    filter=b.dataset.f; store.set("radar-filter",filter);
+    renderFilters(); renderCalendar();
+  });
+
+  function renderHero(){
+    const el=$("hero");
+    const up=data.releases.filter(r=>effStatus(r)!=="sorti" && parseDay(r.date)).sort(sortByDate);
+    if(!up.length){ el.innerHTML=`<div class="state">Aucune sortie à venir n'est connue pour l'instant. La veille continue chaque matin.</div>`; return; }
+    const next=up[0]; const d=parseDay(next.date); const n=daysUntil(d);
+    const sameDay=up.filter(r=>r.date===next.date && r!==next);
+    const count=n<=0?(n===0?"Auj.":"En cours"):`J-${n}`;
+    const small=n<=0?(n===0?"c'est aujourd'hui":"jusqu'au "+fmtShort.format(parseDay(next.dateEnd)||d)):`${n} jour${n>1?"s":""}`;
+    const st=effStatus(next);
+    el.innerHTML=`<div class="hero"><div class="hero-in">
+      <div class="count">${esc(count)}<small>${esc(small)}</small></div>
+      <div class="hero-body">
+        <span class="eyebrow">Prochaine sortie</span>
+        <h2>${esc(next.name)}</h2>
+        <div class="hero-meta"><span>${esc(fmtLong.format(d))}${next.dateEnd?" → "+esc(fmtShort.format(parseDay(next.dateEnd))):""}</span>${priceText(next.price)?`<span class="price">${esc(priceText(next.price))}</span>`:""}<span class="pill s-${st}">${esc(STATUS_LABEL[st])}</span></div>
+        ${next.type==="Avant-première"?whereHTML(next):""}
+        ${buyHTML(next)}
+        ${sameDay.length?`<span class="hero-also">Le même jour : ${sameDay.map(r=>esc(r.name)).join(" · ")}</span>`:""}
+      </div>
+    </div></div>`;
+  }
+  function renderCalendar(){
+    const el=$("calendar");
+    const up=data.releases.filter(r=>effStatus(r)!=="sorti").filter(r=>filter==="all"||groupOf(r)===filter).sort(sortByDate);
+    if(!up.length){ el.innerHTML=`<div class="state">Rien dans cette catégorie pour le moment.</div>`; return; }
+    const months=new Map();
+    for(const r of up){ const d=parseDay(r.date); const key=d?`${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}`:"zz"; if(!months.has(key)) months.set(key,[]); months.get(key).push(r); }
+    el.innerHTML=[...months.entries()].map(([k,items])=>{
+      const label=k==="zz"?"Date non fixée":fmtMonth.format(parseDay(k+"-01"));
+      return `<div class="month"><h3>${esc(label)}<span>${items.length} produit${items.length>1?"s":""}</span></h3><div class="rows">${items.map(rowHTML).join("")}</div></div>`;
+    }).join("");
+  }
+  function renderRecent(){
+    const past=data.releases.filter(r=>effStatus(r)==="sorti" && parseDay(r.date) && daysUntil(parseDay(r.date))>=-45).sort((a,b)=>sortByDate(b,a)).slice(0,8);
+    $("recent").innerHTML=past.length?past.map(r=>`<div class="li"><time>${esc(fmtShort.format(parseDay(r.date)))}</time><p>${esc(r.name)}${priceText(r.price)?` <span class="price" style="font-size:12.5px;color:var(--muted)">· ${esc(priceText(r.price))}</span>`:""}</p>${r.note?`<p style="color:var(--muted);font-size:13px">${esc(r.note)}</p>`:""}${buyHTML(r,true)}</div>`).join(""):`<div class="empty">Aucune sortie ces six dernières semaines.</div>`;
+  }
+  function renderJournal(){
+    const items=[...(data.journal||[])].sort((a,b)=>String(b.at).localeCompare(String(a.at))).slice(0,15);
+    $("journal").innerHTML=items.length?items.map(j=>{const t=new Date(j.at);return `<div class="li"><time>${isNaN(t)?"":esc(fmtShort.format(t))}</time><span class="k">${esc(j.kind||"info")}</span><p>${esc(j.text)}</p></div>`;}).join(""):`<div class="empty">Pas encore de passage de la veille.</div>`;
+  }
+  function renderVeille(){
+    const v=data.veille||{}; const el=$("veille");
+    const last=new Date(v.lastCheck); const age=(Date.now()-last)/3600000;
+    el.classList.toggle("stale",!(age<36));
+    el.innerHTML=`<span><span class="dot"></span><b>Veille IA</b> · chaque matin</span><span>Dernier passage : ${isNaN(last)?"inconnu":esc(fmtStamp.format(last))}</span>${v.lastResult?`<span>${esc(v.lastResult)}</span>`:""}`;
+  }
+  function renderAll(){
+    renderVeille(); renderFilters(); renderHero(); renderCalendar(); renderRecent(); renderJournal();
+    const nNew=data.releases.filter(isNew).length;
+    if("setAppBadge" in navigator){ (nNew?navigator.setAppBadge(nNew):navigator.clearAppBadge()).catch(()=>{}); }
+  }
+
+  async function load(manual){
+    const btn=$("refresh"); btn.disabled=true; btn.textContent="Actualisation…";
+    try{
+      const res=await fetch("data.json?t="+Date.now(),{cache:"no-store"});
+      if(!res.ok) throw new Error("HTTP "+res.status);
+      const offline=res.headers.get("X-Radar-Offline")==="1";
+      data=await res.json();
+      if(!Array.isArray(data.releases)) data.releases=[];
+      renderAll();
+      const off=$("offline");
+      if(offline){
+        off.hidden=false;
+        $("offline-text").textContent="Hors connexion : tu vois les données enregistrées"+(data.generatedAt?" le "+fmtStamp.format(new Date(data.generatedAt)):"")+".";
+      } else off.hidden=true;
+    }catch(e){
+      if(!data){
+        $("hero").innerHTML=`<div class="state">Impossible de charger le calendrier. Vérifie ta connexion puis touche « Actualiser ».</div>`;
+        $("calendar").innerHTML=""; $("journal").innerHTML=`<div class="empty">—</div>`; $("recent").innerHTML=`<div class="empty">—</div>`;
+        $("veille").innerHTML=`<span><b>Veille IA</b></span><span>Données indisponibles</span>`;
+      }
+    }finally{
+      btn.disabled=false; btn.textContent="Actualiser";
+    }
+  }
+  $("refresh").addEventListener("click",()=>load(true));
+  document.addEventListener("visibilitychange",()=>{
+    if(document.visibilityState==="hidden") store.set("radar-last-visit",new Date().toISOString());
+    else if(data && Date.now()-new Date(data.generatedAt||0)>6*3600000) load(false);
+  });
+  window.addEventListener("pagehide",()=>store.set("radar-last-visit",new Date().toISOString()));
+  if(!prevVisit) store.set("radar-last-visit",new Date().toISOString());
+
+  // installation
+  const standalone=window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone===true;
+  let deferred=null;
+  window.addEventListener("beforeinstallprompt",e=>{ e.preventDefault(); deferred=e; if(!standalone) $("install").hidden=false; });
+  $("install").addEventListener("click",async()=>{
+    if(!deferred) return;
+    deferred.prompt();
+    try{ await deferred.userChoice; }catch(e){}
+    deferred=null; $("install").hidden=true;
+  });
+  window.addEventListener("appinstalled",()=>{ $("install").hidden=true; });
+  const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform==="MacIntel" && navigator.maxTouchPoints>1);
+  if(isIOS && !standalone && store.get("radar-ios-help")!=="closed") $("ios-help").hidden=false;
+  $("ios-close").addEventListener("click",()=>{ $("ios-help").hidden=true; store.set("radar-ios-help","closed"); });
+
+  if("serviceWorker" in navigator){
+    window.addEventListener("load",()=>{ navigator.serviceWorker.register("sw.js").catch(()=>{}); });
+  }
+  load(false);
+})();
+</script>
+</body>
+</html>

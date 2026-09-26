@@ -1,0 +1,20 @@
+{
+  "id": "./",
+  "name": "Radar JCC Pokémon",
+  "short_name": "Radar JCC",
+  "description": "Les prochaines sorties du jeu de cartes Pokémon en français : dates, prix conseillés et liens d'achat, mis à jour chaque matin.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F3F4F9",
+  "theme_color": "#2F4BD6",
+  "categories": ["entertainment", "shopping"],
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+ "generatedAt": "2026-09-26T15:20:50+00:00",
+ "veille": {
+  "lastCheck": "2026-09-26T17:06:00+02:00",
+  "lastResult": "18 produits suivis · premier chargement",
+  "sources": [
+   "pokemon.com/fr",
+   "pokecardex.com",
+   "pokeindex.fr",
+   "presse JCC"
+  ]
+ },
+ "journal": [
+  {
+   "at": "2026-09-26T17:30:00+02:00",
+   "kind": "info",
+   "text": "Liens d'achat ajoutés sur chaque produit (Fnac, Amazon, Micromania, E.Leclerc, Carrefour, Cultura) et pages de suivi des stocks quand elles existent."
+  },
+  {
+   "at": "2026-09-26T17:06:00+02:00",
+   "kind": "création",
+   "text": "Radar lancé avec 18 produits : fin de la gamme 30e Anniversaire et extension Règne Delta (ME06)."
+  },
+  {
+   "at": "2026-09-26T17:05:00+02:00",
+   "kind": "report",
+   "text": "Collection Classeur 30e Anniversaire décalée du 2 octobre au 4 décembre."
+  },
+  {
+   "at": "2026-09-26T17:04:00+02:00",
+   "kind": "confirmation",
+   "text": "Règne Delta confirmé le 6 novembre sur pokemon.com/fr, avant-premières du 24 octobre au 1er novembre."
+  }
+ ],
+ "releases": [
+  {
+   "id": "30c-etb",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "ean": "0196214144835",
+   "links": [
+    {
+     "shop": "Fnac",
+     "status": "rupture",
+     "url": "https://www.fnac.com/Cartes-a-collectionner-Pokemon-30A-Coffret-Dresseur-d-Elite/a23200296/w-4"
+    }
+   ],
+   "name": "Coffret Dresseur d'Élite 30e Anniversaire",
+   "note": "9 boosters, promo Nidorina entièrement illustrée, 65 protège-cartes, 16 Énergies brillantes.",
+   "price": 55.99,
+   "set": "30e Anniversaire",
+   "source": "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026",
+   "sourceName": "pokemon.com/fr",
+   "status": "sorti",
+   "trackUrl": "https://lecrocodeal.com/coffret-pokemon-dresseur-elite-30e-anniversaire",
+   "type": "ETB",
+   "updatedAt": "2026-09-26T17:35:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-coffrets-ex",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "name": "Coffrets 30e Anniversaire Nymphali-ex / Amphinobi-ex",
+   "note": "4 boosters, carte promo et sa version grand format. Deux modèles.",
+   "price": 26.99,
+   "searchQuery": "coffret pokemon 30e anniversaire nymphali amphinobi",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
+   "sourceName": "Pokécardex",
+   "status": "sorti",
+   "type": "Coffret",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-extension",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "name": "Extension 30e Anniversaire (boosters)",
+   "note": "Sortie mondiale simultanée, une première. Toutes les cartes sont brillantes, dont 30 Pikachu illustrés par 30 artistes. Stocks très tendus, restocks par vagues.",
+   "price": null,
+   "searchQuery": "booster pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026",
+   "sourceName": "pokemon.com/fr",
+   "status": "sorti",
+   "trackUrl": "https://lecrocodeal.com/cartes-pokemon-serie-speciale-30e-anniversaire",
+   "type": "Extension",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-collection-ko",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-09-24",
+   "name": "Coffret Collection KO 30e Anniversaire",
+   "note": "",
+   "price": 13.99,
+   "searchQuery": "pokemon collection KO 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "sorti",
+   "type": "Coffret",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Grandes surfaces"
+   ]
+  },
+  {
+   "id": "30c-bundle",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-10-02",
+   "ean": "0196214145221",
+   "name": "Lot de boosters 30e Anniversaire (bundle 6 boosters)",
+   "note": "Deuxième vague de la gamme 30 ans. Certains revendeurs signalent un décalage sur leur propre stock.",
+   "price": 35.99,
+   "set": "30e Anniversaire",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "trackUrl": "https://lecrocodeal.com/bundle-6-boosters-pokemon-30-ans-ou-commander",
+   "type": "Bundle",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-mini-boites",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-10-02",
+   "name": "Mini-boîtes 30e Anniversaire (Jour / Nuit)",
+   "note": "10 modèles différents (Jour / Nuit). Demandes d'invitation déjà ouvertes sur Amazon.",
+   "price": "11,99 – 14,99 €",
+   "searchQuery": "mini boite pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "trackUrl": "https://lecrocodeal.com/mini-tins-pokemon-30e-anniversaire",
+   "type": "Mini-boîtes",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Grandes surfaces",
+    "Fnac",
+    "Cultura"
+   ]
+  },
+  {
+   "id": "duopack-oct-2026",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME",
+   "date": "2026-10-02",
+   "name": "Pack 2 boosters Octobre 2026 (Mimiqui, Ectoplasma, Marshadow)",
+   "note": "3 cartes holo cosmos, 1 booster Nuit Noire + 1 booster Chaos Ascendant (à confirmer), pièce Méga-Ectoplasma.",
+   "price": 12.99,
+   "searchQuery": "duopack pokemon mimiqui ectoplasma marshadow",
+   "set": "Méga-Évolution",
+   "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
+   "sourceName": "Pokécardex",
+   "status": "annonce",
+   "type": "Pack",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Grandes surfaces",
+    "Boutiques JCC spécialisées"
+   ]
+  },
+  {
+   "id": "me06-avant-premiere",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME06",
+   "date": "2026-10-24",
+   "dateEnd": "2026-11-01",
+   "name": "Avant-premières Règne Delta (Boîtier Stratégies et Combats)",
+   "note": "Tournois en boutique : deck de 40 cartes, 4 boosters Règne Delta et une carte promo tamponnée. Inscription auprès de la boutique.",
+   "price": "≈ 30 € (participation)",
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://playshop.fr/blogs/actu-pokemon/regne-delta-me06-date-sortie-cartes-precommandes",
+   "sourceName": "PlayShop",
+   "status": "officiel",
+   "type": "Avant-première",
+   "updatedAt": "2026-09-26T17:06:00+02:00",
+   "where": [
+    "Boutiques indépendantes participantes (Play! Pokémon)"
+   ]
+  },
+  {
+   "id": "30c-deck-combat",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-10-30",
+   "name": "Deck Combat 30e Anniversaire Mentali-ex / Noctali-ex",
+   "note": "Deck prêt à jouer de 60 cartes brillantes, promo Victini ou Zeraora. Deux modèles.",
+   "price": 19.99,
+   "searchQuery": "deck combat pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
+   "sourceName": "Pokécardex",
+   "status": "annonce",
+   "type": "Deck",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces"
+   ]
+  },
+  {
+   "id": "30c-metamorph",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-11-06",
+   "name": "Coffret Collection Premium Métamorph",
+   "note": "8 boosters 30e Anniversaire, promo Métamorph et présentoir acrylique.",
+   "price": "49,99 €",
+   "searchQuery": "collection premium metamorph pokemon",
+   "set": "30e Anniversaire",
+   "source": "https://pokecop.com/blog/produits-30-ans-pokemon-liste-complete-dates-prix-et-items-30th-celebration",
+   "sourceName": "Pokécop",
+   "status": "annonce",
+   "type": "Coffret",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "me06-etb",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME06",
+   "date": "2026-11-06",
+   "ean": "0196214143913",
+   "name": "Coffret Dresseur d'Élite Règne Delta",
+   "note": "Prix conseillé indicatif. Les grandes enseignes n'ont pas encore ouvert leur page produit ; précommandes attendues début octobre chez Micromania.",
+   "price": 55.99,
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "trackUrl": "https://lecrocodeal.com/coffret-pokemon-etb-dresseur-elite-me06-regne-delta",
+   "type": "ETB",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-figurine",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-11-06",
+   "name": "Coffrets Collection avec figurine Mewtwo / Mew",
+   "note": "Figurine, carte promo brillante et version grand format, 5 boosters. Prix constatés différents selon les boutiques.",
+   "price": "37,99 – 49,99 €",
+   "searchQuery": "coffret figurine mewtwo mew pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "type": "Coffret",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-upc",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-11-06",
+   "name": "Collection Ultra-Premium 30e Anniversaire (Journée / Soirée)",
+   "note": "29 boosters + 1 booster Collection Classique. Version Journée (Mentali) ou Soirée (Noctali). Souvent vendue sur invitation.",
+   "price": 229.99,
+   "searchQuery": "collection ultra premium pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
+   "sourceName": "Pokécardex",
+   "status": "annonce",
+   "trackUrl": "https://chocobonplan.com/bons-plans/cartes-a-jouer/cartes-pokemon/coffret-ultra-premium-pokemon-30eme-anniversaire",
+   "type": "Coffret Ultra-Premium",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Amazon (sur invitation)"
+   ]
+  },
+  {
+   "id": "me06-bundle",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME06",
+   "date": "2026-11-06",
+   "name": "Lot de boosters Règne Delta (bundle)",
+   "note": "",
+   "price": 35.99,
+   "searchQuery": "bundle pokemon regne delta",
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "type": "Bundle",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "me06-extension",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME06",
+   "date": "2026-11-06",
+   "name": "Méga-Évolution : Règne Delta (boosters et displays)",
+   "note": "Méga-Rayquaza-ex en vedette, plus de 135 cartes. Displays 36 et 18 boosters attendus. Disponible la veille sur JCC Pokémon Live.",
+   "price": null,
+   "searchQuery": "pokemon regne delta",
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://www.pokemon.com/fr/actualites/lextension-mega-evolution-regne-delta-du-jcc-pokemon-arrive-le-6-novembre-2026",
+   "sourceName": "pokemon.com/fr",
+   "status": "officiel",
+   "type": "Extension",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "me06-tripack",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "ME06",
+   "date": "2026-11-06",
+   "name": "Pack 3 boosters Règne Delta (tripack)",
+   "note": "3 boosters Règne Delta et une carte promo Otaria.",
+   "price": 17.99,
+   "searchQuery": "tripack pokemon regne delta",
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "trackUrl": "https://chocobonplan.com/bons-plans/cartes-a-jouer/cartes-pokemon/tripack-otaria-me06-regne-delta",
+   "type": "Tripack",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Grandes surfaces",
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura"
+   ]
+  },
+  {
+   "id": "30c-tripack-autocollant",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-11-13",
+   "name": "Tripack Collection autocollant réajustable 30e Anniversaire",
+   "note": "Modèles Noadkoko d'Alola ou Lucario. Prix à confirmer.",
+   "price": 19.99,
+   "searchQuery": "tripack autocollant pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://www.pokeindex.fr/calendrier-sorties",
+   "sourceName": "Pokéindex",
+   "status": "annonce",
+   "type": "Tripack",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Grandes surfaces",
+    "Boutiques JCC spécialisées"
+   ]
+  },
+  {
+   "id": "30c-classeur",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-12-04",
+   "ean": "0196214145153",
+   "name": "Coffret Collection Classeur 30e Anniversaire",
+   "note": "Classeur 9 pochettes. Report annoncé au 4 décembre ; certaines boutiques affichent encore le 16 ou le 23 octobre.",
+   "previousDate": "2026-10-02",
+   "price": 45.99,
+   "set": "30e Anniversaire",
+   "source": "https://pokecop.com/blog/produits-30-ans-pokemon-liste-complete-dates-prix-et-items-30th-celebration",
+   "sourceName": "Pokécop",
+   "status": "reporte",
+   "trackUrl": "https://lecrocodeal.com/coffret-pokemon-classeur-30e-anniversaire",
+   "type": "Coffret",
+   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Amazon"
+   ]
+  }
+ ]
+}
