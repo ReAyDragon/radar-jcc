@@ -123,6 +123,8 @@ button{font:inherit}
 .s-sorti{background:var(--done-soft);color:var(--done)}
 .price{font-family:var(--mono);font-size:14px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
 .was{font-size:12px;color:var(--bad)}
+.restocks{border-left:3px solid var(--warn)}
+.restock-k{color:var(--warn)}
 
 .lower{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
 .panel{display:flex;flex-direction:column;gap:10px}
@@ -177,6 +179,11 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
   <div class="notice offline" id="offline" hidden><p id="offline-text"></p></div>
 
   <section id="hero" aria-label="Prochaine sortie"><div class="skel" style="height:150px"></div></section>
+
+  <section class="panel" id="restocks-wrap" aria-labelledby="h-restocks" hidden>
+    <h3 id="h-restocks">Retour de stock à venir</h3>
+    <div class="list restocks" id="restocks"></div>
+  </section>
 
   <nav class="bar" id="filters" aria-label="Filtrer par type de produit"></nav>
   <p class="buy-hint">Les boutons d'achat ouvrent le produit chez chaque enseigne : en bleu plein, une page produit vérifiée ; sinon, la recherche du produit sur le site. Sur Amazon, prends une offre « expédiée et vendue par Amazon » et vérifie toujours le prix avant de payer.</p>
@@ -347,6 +354,23 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
       return `<div class="month"><h3>${esc(label)}<span>${items.length} produit${items.length>1?"s":""}</span></h3><div class="rows">${items.map(rowHTML).join("")}</div></div>`;
     }).join("");
   }
+  function restockRowHTML(r){
+    const d=parseDay(r.restockDate); const n=daysUntil(d); const shop=r.restockShop||"une enseigne";
+    const link=(Array.isArray(r.links)?r.links:[]).find(l=>l&&l.shop&&String(l.shop).toLowerCase()===String(shop).toLowerCase());
+    const url=link&&safeUrl(link.url);
+    return `<div class="li">
+      <time>${esc(fmtShort.format(d))}</time>
+      <span class="k restock-k">${n<=0?"Auj.":"J-"+n} · ${esc(shop)}</span>
+      <p>${esc(r.name)}</p>
+      ${url?`<div class="buy"><a class="shop direct" href="${esc(url)}" target="_blank" rel="noopener">Voir chez ${esc(shop)} ↗</a></div>`:""}
+    </div>`;
+  }
+  function renderRestocks(){
+    const wrap=$("restocks-wrap");
+    const items=data.releases.filter(r=>r.restockDate && parseDay(r.restockDate) && daysUntil(parseDay(r.restockDate))>=0).sort((a,b)=>String(a.restockDate).localeCompare(String(b.restockDate)));
+    wrap.hidden=!items.length;
+    $("restocks").innerHTML=items.map(restockRowHTML).join("");
+  }
   function renderRecent(){
     const past=data.releases.filter(r=>effStatus(r)==="sorti" && parseDay(r.date) && daysUntil(parseDay(r.date))>=-45).sort((a,b)=>sortByDate(b,a)).slice(0,8);
     $("recent").innerHTML=past.length?past.map(r=>`<div class="li"><time>${esc(fmtShort.format(parseDay(r.date)))}</time><p>${esc(r.name)}${priceText(r.price)?` <span class="price" style="font-size:12.5px;color:var(--muted)">· ${esc(priceText(r.price))}</span>`:""}</p>${r.note?`<p style="color:var(--muted);font-size:13px">${esc(r.note)}</p>`:""}${buyHTML(r,true)}</div>`).join(""):`<div class="empty">Aucune sortie ces six dernières semaines.</div>`;
@@ -362,7 +386,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     el.innerHTML=`<span><span class="dot"></span><b>Veille IA</b> · chaque matin</span><span>Dernier passage : ${isNaN(last)?"inconnu":esc(fmtStamp.format(last))}</span>${v.lastResult?`<span>${esc(v.lastResult)}</span>`:""}`;
   }
   function renderAll(){
-    renderVeille(); renderFilters(); renderHero(); renderCalendar(); renderRecent(); renderJournal();
+    renderVeille(); renderFilters(); renderHero(); renderRestocks(); renderCalendar(); renderRecent(); renderJournal();
     const nNew=data.releases.filter(isNew).length;
     if("setAppBadge" in navigator){ (nNew?navigator.setAppBadge(nNew):navigator.clearAppBadge()).catch(()=>{}); }
   }

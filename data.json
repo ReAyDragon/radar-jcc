@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-26T23:15:36+00:00",
+ "generatedAt": "2026-09-26T23:23:54+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T10:30:00+02:00",
+  "lastCheck": "2026-09-27T01:23:00+02:00",
   "lastResult": "4 mises à jour · 19 produits suivis",
   "sources": [
    "pokemon.com/fr",
@@ -14,32 +14,32 @@
  },
  "journal": [
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T01:16:00+02:00",
    "kind": "date",
    "text": "Tripack Collection autocollant réajustable 30e Anniversaire : déjà sorti le 16 septembre (1ère vague), et non le 13 novembre comme indiqué par erreur."
   },
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T01:16:00+02:00",
    "kind": "info",
    "text": "Restock annoncé chez Micromania pour l'ETB 30e Anniversaire : lundi 5 octobre."
   },
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T01:16:00+02:00",
    "kind": "confirmation",
    "text": "Prix de l'ETB Règne Delta (ME06) confirmé à 55,99 € par recoupement multi-sources."
   },
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T01:16:00+02:00",
    "kind": "info",
    "text": "Contenu du Pack 2 boosters d'Octobre confirmé : boosters Nuit Noire (ME05) + Chaos Ascendant (ME04), pas un set inédit."
   },
   {
-   "at": "2026-09-27T09:00:00+02:00",
+   "at": "2026-09-27T00:50:00+02:00",
    "kind": "report",
    "text": "Coffret Collection Classeur 30e Anniversaire de nouveau reporté : du 23 octobre au 4 décembre, confirmé sur la fiche produit officielle."
   },
   {
-   "at": "2026-09-27T09:00:00+02:00",
+   "at": "2026-09-27T00:50:00+02:00",
    "kind": "date",
    "text": "Pokébox 30e Anniversaire Nymphali-ex/Amphinobi-ex : date corrigée au 16 septembre (déjà sortie), et non le 16 octobre comme indiqué par erreur."
   },
@@ -101,13 +101,15 @@
    "name": "Coffret Dresseur d'Élite 30e Anniversaire",
    "note": "9 boosters, promo Nidorina entièrement illustrée, 65 protège-cartes, 16 Énergies brillantes. Retour de stock annoncé chez Micromania pour le lundi 5 octobre (fiche produit Micromania, non recoupé ailleurs à ce stade).",
    "price": 55.99,
+   "restockDate": "2026-10-05",
+   "restockShop": "Micromania",
    "set": "30e Anniversaire",
    "source": "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026",
    "sourceName": "pokemon.com/fr",
    "status": "sorti",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-dresseur-elite-30e-anniversaire",
    "type": "ETB",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T01:23:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -179,7 +181,7 @@
    "status": "sorti",
    "trackUrl": "https://lecrocodeal.com/pokebox-pokemon-30-ans-amphinobi-et-nymphali",
    "type": "Coffret",
-   "updatedAt": "2026-09-27T09:00:00+02:00",
+   "updatedAt": "2026-09-27T00:50:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -203,7 +205,7 @@
    "sourceName": "Otakus Mafia World",
    "status": "sorti",
    "type": "Tripack",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T01:16:00+02:00",
    "where": [
     "Grandes surfaces",
     "Boutiques JCC spécialisées"
@@ -289,7 +291,7 @@
    "sourceName": "Pokécardex",
    "status": "annonce",
    "type": "Pack",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T01:16:00+02:00",
    "where": [
     "Grandes surfaces",
     "Boutiques JCC spécialisées"
@@ -373,7 +375,7 @@
    "status": "annonce",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-etb-dresseur-elite-me06-regne-delta",
    "type": "ETB",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T01:16:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -511,7 +513,7 @@
    "status": "reporte",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-classeur-30e-anniversaire",
    "type": "Coffret",
-   "updatedAt": "2026-09-27T09:00:00+02:00",
+   "updatedAt": "2026-09-27T00:50:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
