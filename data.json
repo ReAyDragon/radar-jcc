@@ -1,17 +1,38 @@
 {
- "generatedAt": "2026-09-26T22:49:10+00:00",
+ "generatedAt": "2026-09-26T23:15:36+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T09:00:00+02:00",
-  "lastResult": "2 nouveautés · 19 produits suivis",
+  "lastCheck": "2026-09-27T10:30:00+02:00",
+  "lastResult": "4 mises à jour · 19 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
    "pokeindex.fr",
    "pokelite.fr",
+   "micromania.fr",
    "presse JCC"
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "date",
+   "text": "Tripack Collection autocollant réajustable 30e Anniversaire : déjà sorti le 16 septembre (1ère vague), et non le 13 novembre comme indiqué par erreur."
+  },
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "info",
+   "text": "Restock annoncé chez Micromania pour l'ETB 30e Anniversaire : lundi 5 octobre."
+  },
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "confirmation",
+   "text": "Prix de l'ETB Règne Delta (ME06) confirmé à 55,99 € par recoupement multi-sources."
+  },
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "info",
+   "text": "Contenu du Pack 2 boosters d'Octobre confirmé : boosters Nuit Noire (ME05) + Chaos Ascendant (ME04), pas un set inédit."
+  },
   {
    "at": "2026-09-27T09:00:00+02:00",
    "kind": "report",
@@ -70,10 +91,15 @@
      "shop": "Fnac",
      "status": "rupture",
      "url": "https://www.fnac.com/Cartes-a-collectionner-Pokemon-30A-Coffret-Dresseur-d-Elite/a23200296/w-4"
+    },
+    {
+     "shop": "Micromania",
+     "status": "rupture",
+     "url": "https://www.micromania.fr/p/coffret-dresseur-d-elite-pokemon-30-ans-162654.html"
     }
    ],
    "name": "Coffret Dresseur d'Élite 30e Anniversaire",
-   "note": "9 boosters, promo Nidorina entièrement illustrée, 65 protège-cartes, 16 Énergies brillantes.",
+   "note": "9 boosters, promo Nidorina entièrement illustrée, 65 protège-cartes, 16 Énergies brillantes. Retour de stock annoncé chez Micromania pour le lundi 5 octobre (fiche produit Micromania, non recoupé ailleurs à ce stade).",
    "price": 55.99,
    "set": "30e Anniversaire",
    "source": "https://www.pokemon.com/fr/actualites/decouvrez-tous-les-produits-du-jcc-pokemon-qui-sortiront-en-septembre-2026",
@@ -81,7 +107,7 @@
    "status": "sorti",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-dresseur-elite-30e-anniversaire",
    "type": "ETB",
-   "updatedAt": "2026-09-26T17:35:00+02:00",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -163,6 +189,27 @@
    ]
   },
   {
+   "id": "30c-tripack-autocollant",
+   "addedAt": "2026-09-26T17:06:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "name": "Tripack Collection autocollant réajustable 30e Anniversaire",
+   "note": "Correction : ce tripack (modèles Noadkoko d'Alola ou Lucario) faisait partie de la 1ère vague de lancement du 16 septembre, comme l'ETB et l'extension — et non du 13 novembre comme indiqué par erreur. Confirmé par plusieurs revendeurs indépendants.",
+   "previousDate": "2026-11-13",
+   "price": 19.99,
+   "searchQuery": "tripack autocollant pokemon 30e anniversaire",
+   "set": "30e Anniversaire",
+   "source": "https://shop.otakusmafiaworld.fr/produit/pokemon-tripack-30e-anniversaire-noadkoko-dalola-ou-lucario",
+   "sourceName": "Otakus Mafia World",
+   "status": "sorti",
+   "type": "Tripack",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "where": [
+    "Grandes surfaces",
+    "Boutiques JCC spécialisées"
+   ]
+  },
+  {
    "id": "30c-collection-ko",
    "addedAt": "2026-09-26T17:06:00+02:00",
    "code": "30C",
@@ -234,7 +281,7 @@
    "code": "ME",
    "date": "2026-10-02",
    "name": "Pack 2 boosters Octobre 2026 (Mimiqui, Ectoplasma, Marshadow)",
-   "note": "3 cartes holo cosmos, 1 booster Nuit Noire + 1 booster Chaos Ascendant (à confirmer), pièce Méga-Ectoplasma.",
+   "note": "Contenu confirmé : 3 cartes promo holo cosmos (Mimiqui de la Team Rocket, Ectoplasma, Marshadow), 1 pièce Méga-Ectoplasma, et 2 boosters de sets déjà sortis (1 booster Méga-Évolution : Nuit Noire ME05 + 1 booster Méga-Évolution : Chaos Ascendant ME04) — pas de nouveau set inédit.",
    "price": 12.99,
    "searchQuery": "duopack pokemon mimiqui ectoplasma marshadow",
    "set": "Méga-Évolution",
@@ -242,7 +289,7 @@
    "sourceName": "Pokécardex",
    "status": "annonce",
    "type": "Pack",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
    "where": [
     "Grandes surfaces",
     "Boutiques JCC spécialisées"
@@ -318,7 +365,7 @@
    "date": "2026-11-06",
    "ean": "0196214143913",
    "name": "Coffret Dresseur d'Élite Règne Delta",
-   "note": "Prix conseillé indicatif (Pokéindex : 55,99 € ; Le CrocoDeal : 56,99 €). Aucune page de précommande ouverte chez les grandes enseignes au 27/09 ; Micromania attendu début octobre.",
+   "note": "Prix conseillé confirmé à 55,99 € par recoupement de plusieurs sites (aucune trace du montant de 56,99 € parfois cité). Aucune page de précommande ouverte chez les grandes enseignes au 27/09 ; Micromania toujours attendu début octobre.",
    "price": 55.99,
    "set": "Méga-Évolution : Règne Delta",
    "source": "https://www.pokeindex.fr/calendrier-sorties",
@@ -326,7 +373,7 @@
    "status": "annonce",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-etb-dresseur-elite-me06-regne-delta",
    "type": "ETB",
-   "updatedAt": "2026-09-27T00:20:00+02:00",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -446,26 +493,6 @@
     "Boutiques JCC spécialisées",
     "Fnac",
     "Cultura"
-   ]
-  },
-  {
-   "id": "30c-tripack-autocollant",
-   "addedAt": "2026-09-26T17:06:00+02:00",
-   "code": "30C",
-   "date": "2026-11-13",
-   "name": "Tripack Collection autocollant réajustable 30e Anniversaire",
-   "note": "Modèles Noadkoko d'Alola ou Lucario. Prix à confirmer.",
-   "price": 19.99,
-   "searchQuery": "tripack autocollant pokemon 30e anniversaire",
-   "set": "30e Anniversaire",
-   "source": "https://www.pokeindex.fr/calendrier-sorties",
-   "sourceName": "Pokéindex",
-   "status": "annonce",
-   "type": "Tripack",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
-   "where": [
-    "Grandes surfaces",
-    "Boutiques JCC spécialisées"
    ]
   },
   {
