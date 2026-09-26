@@ -1,16 +1,42 @@
 {
- "generatedAt": "2026-09-26T15:20:50+00:00",
+ "generatedAt": "2026-09-26T22:49:10+00:00",
  "veille": {
-  "lastCheck": "2026-09-26T17:06:00+02:00",
-  "lastResult": "18 produits suivis · premier chargement",
+  "lastCheck": "2026-09-27T09:00:00+02:00",
+  "lastResult": "2 nouveautés · 19 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
    "pokeindex.fr",
+   "pokelite.fr",
    "presse JCC"
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-27T09:00:00+02:00",
+   "kind": "report",
+   "text": "Coffret Collection Classeur 30e Anniversaire de nouveau reporté : du 23 octobre au 4 décembre, confirmé sur la fiche produit officielle."
+  },
+  {
+   "at": "2026-09-27T09:00:00+02:00",
+   "kind": "date",
+   "text": "Pokébox 30e Anniversaire Nymphali-ex/Amphinobi-ex : date corrigée au 16 septembre (déjà sortie), et non le 16 octobre comme indiqué par erreur."
+  },
+  {
+   "at": "2026-09-27T00:38:00+02:00",
+   "kind": "ajout",
+   "text": "Pokébox 30e Anniversaire Nymphali-ex / Amphinobi-ex ajoutée, annoncée au 16 octobre (25,99 €)."
+  },
+  {
+   "at": "2026-09-27T00:38:00+02:00",
+   "kind": "prix",
+   "text": "Deck Combat 30e Anniversaire : prix conseillé passé de 19,99 € à 24,99 €."
+  },
+  {
+   "at": "2026-09-27T00:38:00+02:00",
+   "kind": "date",
+   "text": "Collection Classeur 30e Anniversaire : date ramenée au 23 octobre selon Pokécardex (le 4 décembre reste évoqué ailleurs)."
+  },
   {
    "at": "2026-09-26T17:30:00+02:00",
    "kind": "info",
@@ -108,6 +134,31 @@
     "Fnac",
     "Cultura",
     "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-pokebox",
+   "addedAt": "2026-09-27T00:38:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "name": "Pokébox 30e Anniversaire Nymphali-ex / Amphinobi-ex",
+   "note": "Correction : la Pokébox faisait partie de la vague de lancement du 16 septembre (comme l'ETB et l'extension), pas du 16 octobre. Prix conseillé constaté variable selon revendeurs (25,99 à 29,90 €).",
+   "previousDate": "2026-10-16",
+   "price": 25.99,
+   "searchQuery": "pokebox pokemon 30e anniversaire nymphali amphinobi",
+   "set": "30e Anniversaire",
+   "source": "https://lecrocodeal.com/pokebox-pokemon-30-ans-amphinobi-et-nymphali",
+   "sourceName": "Le CrocoDeal",
+   "status": "sorti",
+   "trackUrl": "https://lecrocodeal.com/pokebox-pokemon-30-ans-amphinobi-et-nymphali",
+   "type": "Coffret",
+   "updatedAt": "2026-09-27T09:00:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "JouéClub",
     "Amazon"
    ]
   },
@@ -222,15 +273,15 @@
    "code": "30C",
    "date": "2026-10-30",
    "name": "Deck Combat 30e Anniversaire Mentali-ex / Noctali-ex",
-   "note": "Deck prêt à jouer de 60 cartes brillantes, promo Victini ou Zeraora. Deux modèles.",
-   "price": 19.99,
+   "note": "Deck prêt à jouer de 60 cartes brillantes, promo Victini ou Zeraora. Deux modèles. Prix conseillé revu à 24,99 € sur Pokécardex.",
+   "price": 24.99,
    "searchQuery": "deck combat pokemon 30e anniversaire",
    "set": "30e Anniversaire",
    "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
    "sourceName": "Pokécardex",
    "status": "annonce",
    "type": "Deck",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-09-27T00:38:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -267,7 +318,7 @@
    "date": "2026-11-06",
    "ean": "0196214143913",
    "name": "Coffret Dresseur d'Élite Règne Delta",
-   "note": "Prix conseillé indicatif. Les grandes enseignes n'ont pas encore ouvert leur page produit ; précommandes attendues début octobre chez Micromania.",
+   "note": "Prix conseillé indicatif (Pokéindex : 55,99 € ; Le CrocoDeal : 56,99 €). Aucune page de précommande ouverte chez les grandes enseignes au 27/09 ; Micromania attendu début octobre.",
    "price": 55.99,
    "set": "Méga-Évolution : Règne Delta",
    "source": "https://www.pokeindex.fr/calendrier-sorties",
@@ -275,7 +326,7 @@
    "status": "annonce",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-etb-dresseur-elite-me06-regne-delta",
    "type": "ETB",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-09-27T00:20:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -424,16 +475,16 @@
    "date": "2026-12-04",
    "ean": "0196214145153",
    "name": "Coffret Collection Classeur 30e Anniversaire",
-   "note": "Classeur 9 pochettes. Report annoncé au 4 décembre ; certaines boutiques affichent encore le 16 ou le 23 octobre.",
-   "previousDate": "2026-10-02",
+   "note": "Nouveau report confirmé sur la fiche produit de The Pokémon Company : passage du 23 octobre au 4 décembre. Certains revendeurs affichent encore une ancienne date, à vérifier avant précommande.",
+   "previousDate": "2026-10-23",
    "price": 45.99,
    "set": "30e Anniversaire",
-   "source": "https://pokecop.com/blog/produits-30-ans-pokemon-liste-complete-dates-prix-et-items-30th-celebration",
-   "sourceName": "Pokécop",
+   "source": "https://www.pokelite.fr/retard-sortie-pokemon-30e-anniversaire-nouvelles-dates-et-point-precommandes/",
+   "sourceName": "Pokelite",
    "status": "reporte",
    "trackUrl": "https://lecrocodeal.com/coffret-pokemon-classeur-30e-anniversaire",
    "type": "Coffret",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-09-27T09:00:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
