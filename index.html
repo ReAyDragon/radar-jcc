@@ -125,6 +125,7 @@ button{font:inherit}
 .was{font-size:12px;color:var(--bad)}
 .restocks{border-left:3px solid var(--warn)}
 .restock-k{color:var(--warn)}
+#calendar .rel:target,#recent .li:target{outline:2px solid var(--accent);outline-offset:4px;border-radius:12px;scroll-margin-top:16px}
 
 .lower{display:grid;grid-template-columns:1.1fr 1fr;gap:28px;align-items:start}
 .panel{display:flex;flex-direction:column;gap:10px}
@@ -295,7 +296,7 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
     const d=parseDay(r.date); const end=parseDay(r.dateEnd); const st=effStatus(r);
     const dateCol=d?`<span class="d">${String(d.getDate()).padStart(2,"0")}</span><span class="wd">${esc(fmtWd.format(d))}</span>${end?`<span class="range">→ ${esc(fmtShort.format(end))}</span>`:""}`:`<span class="d">?</span><span class="wd">date à venir</span>`;
     const prev=parseDay(r.previousDate);
-    return `<article class="rel">
+    return `<article class="rel" id="p-${esc(r.id)}">
       <div class="rel-date">${dateCol}</div>
       <div class="rel-body">
         <div class="rel-top">${isNew(r)?`<span class="newtag">Nouveau</span>`:""}${r.code?`<span class="code">${esc(r.code)}</span>`:""}<span>${esc(r.type||"")}</span>${r.set?`<span>· ${esc(r.set)}</span>`:""}</div>
@@ -373,11 +374,16 @@ footer{font-size:12.5px;color:var(--muted);text-align:center}
   }
   function renderRecent(){
     const past=data.releases.filter(r=>effStatus(r)==="sorti" && parseDay(r.date) && daysUntil(parseDay(r.date))>=-45).sort((a,b)=>sortByDate(b,a)).slice(0,8);
-    $("recent").innerHTML=past.length?past.map(r=>`<div class="li"><time>${esc(fmtShort.format(parseDay(r.date)))}</time><p>${esc(r.name)}${priceText(r.price)?` <span class="price" style="font-size:12.5px;color:var(--muted)">· ${esc(priceText(r.price))}</span>`:""}</p>${r.note?`<p style="color:var(--muted);font-size:13px">${esc(r.note)}</p>`:""}${buyHTML(r,true)}</div>`).join(""):`<div class="empty">Aucune sortie ces six dernières semaines.</div>`;
+    $("recent").innerHTML=past.length?past.map(r=>`<div class="li" id="p-${esc(r.id)}"><time>${esc(fmtShort.format(parseDay(r.date)))}</time><p>${esc(r.name)}${priceText(r.price)?` <span class="price" style="font-size:12.5px;color:var(--muted)">· ${esc(priceText(r.price))}</span>`:""}</p>${r.note?`<p style="color:var(--muted);font-size:13px">${esc(r.note)}</p>`:""}${buyHTML(r,true)}</div>`).join(""):`<div class="empty">Aucune sortie ces six dernières semaines.</div>`;
   }
   function renderJournal(){
     const items=[...(data.journal||[])].sort((a,b)=>String(b.at).localeCompare(String(a.at))).slice(0,15);
-    $("journal").innerHTML=items.length?items.map(j=>{const t=new Date(j.at);return `<div class="li"><time>${isNaN(t)?"":esc(fmtShort.format(t))}</time><span class="k">${esc(j.kind||"info")}</span><p>${esc(j.text)}</p></div>`;}).join(""):`<div class="empty">Pas encore de passage de la veille.</div>`;
+    const byId=new Map((data.releases||[]).map(r=>[r.id,r]));
+    $("journal").innerHTML=items.length?items.map(j=>{
+      const t=new Date(j.at);
+      const rel=j.productId?byId.get(j.productId):null;
+      return `<div class="li"><time>${isNaN(t)?"":esc(fmtShort.format(t))}</time><span class="k">${esc(j.kind||"info")}</span><p>${esc(j.text)}${rel?` <a class="track" href="#p-${esc(rel.id)}">Voir la fiche →</a>`:""}</p></div>`;
+    }).join(""):`<div class="empty">Pas encore de passage de la veille.</div>`;
   }
   function renderVeille(){
     const v=data.veille||{}; const el=$("veille");

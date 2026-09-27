@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-27T00:50:34+00:00",
+ "generatedAt": "2026-09-27T00:57:44+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T10:30:00+02:00",
+  "lastCheck": "2026-09-27T02:49:00+02:00",
   "lastResult": "1 nouveau produit · 20 produits suivis",
   "sources": [
    "pokemon.com/fr",
@@ -15,58 +15,69 @@
  },
  "journal": [
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T02:49:00+02:00",
    "kind": "ajout",
+   "productId": "30c-poster",
    "text": "Coffret Poster 30e Anniversaire ajouté : sorti le 16 septembre (3 boosters, poster et cartes promo Artikodin/Électhor/Sulfura), prix constaté 16,99 €."
   },
   {
-   "at": "2026-09-27T10:30:00+02:00",
+   "at": "2026-09-27T02:49:00+02:00",
    "kind": "prix",
+   "productId": "30c-upc",
    "text": "Désaccord de prix relevé sur la Collection Ultra-Premium 30e Anniversaire : 229,99 € selon Pokécardex, 239,99 € selon d'autres sources citant The Pokémon Company — à confirmer."
   },
   {
    "at": "2026-09-27T01:16:00+02:00",
    "kind": "date",
+   "productId": "30c-tripack-autocollant",
    "text": "Tripack Collection autocollant réajustable 30e Anniversaire : déjà sorti le 16 septembre (1ère vague), et non le 13 novembre comme indiqué par erreur."
   },
   {
    "at": "2026-09-27T01:16:00+02:00",
    "kind": "info",
+   "productId": "30c-etb",
    "text": "Restock annoncé chez Micromania pour l'ETB 30e Anniversaire : lundi 5 octobre."
   },
   {
    "at": "2026-09-27T01:16:00+02:00",
    "kind": "confirmation",
+   "productId": "me06-etb",
    "text": "Prix de l'ETB Règne Delta (ME06) confirmé à 55,99 € par recoupement multi-sources."
   },
   {
    "at": "2026-09-27T01:16:00+02:00",
    "kind": "info",
+   "productId": "duopack-oct-2026",
    "text": "Contenu du Pack 2 boosters d'Octobre confirmé : boosters Nuit Noire (ME05) + Chaos Ascendant (ME04), pas un set inédit."
   },
   {
    "at": "2026-09-27T00:50:00+02:00",
    "kind": "report",
+   "productId": "30c-classeur",
    "text": "Coffret Collection Classeur 30e Anniversaire de nouveau reporté : du 23 octobre au 4 décembre, confirmé sur la fiche produit officielle."
   },
   {
    "at": "2026-09-27T00:50:00+02:00",
    "kind": "date",
+   "productId": "30c-pokebox",
    "text": "Pokébox 30e Anniversaire Nymphali-ex/Amphinobi-ex : date corrigée au 16 septembre (déjà sortie), et non le 16 octobre comme indiqué par erreur."
   },
   {
    "at": "2026-09-27T00:38:00+02:00",
    "kind": "ajout",
+   "productId": "30c-pokebox",
    "text": "Pokébox 30e Anniversaire Nymphali-ex / Amphinobi-ex ajoutée, annoncée au 16 octobre (25,99 €)."
   },
   {
    "at": "2026-09-27T00:38:00+02:00",
    "kind": "prix",
+   "productId": "30c-deck-combat",
    "text": "Deck Combat 30e Anniversaire : prix conseillé passé de 19,99 € à 24,99 €."
   },
   {
    "at": "2026-09-27T00:38:00+02:00",
    "kind": "date",
+   "productId": "30c-classeur",
    "text": "Collection Classeur 30e Anniversaire : date ramenée au 23 octobre selon Pokécardex (le 4 décembre reste évoqué ailleurs)."
   },
   {
@@ -82,11 +93,13 @@
   {
    "at": "2026-09-26T17:05:00+02:00",
    "kind": "report",
+   "productId": "30c-classeur",
    "text": "Collection Classeur 30e Anniversaire décalée du 2 octobre au 4 décembre."
   },
   {
    "at": "2026-09-26T17:04:00+02:00",
    "kind": "confirmation",
+   "productId": "me06-extension",
    "text": "Règne Delta confirmé le 6 novembre sur pokemon.com/fr, avant-premières du 24 octobre au 1er novembre."
   }
  ],
@@ -143,7 +156,7 @@
    "sourceName": "Le CrocoDeal",
    "status": "sorti",
    "type": "Coffret",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T02:49:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Grandes surfaces",
@@ -456,7 +469,7 @@
    "status": "annonce",
    "trackUrl": "https://chocobonplan.com/bons-plans/cartes-a-jouer/cartes-pokemon/coffret-ultra-premium-pokemon-30eme-anniversaire",
    "type": "Coffret Ultra-Premium",
-   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "updatedAt": "2026-09-27T02:49:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
