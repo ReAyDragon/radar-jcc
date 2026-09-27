@@ -1,15 +1,14 @@
 {
- "generatedAt": "2026-09-27T03:48:08+00:00",
+ "generatedAt": "2026-09-27T04:48:02+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T11:00:00+02:00",
-  "lastResult": "1 confirmation (prix UPC 30e Anniversaire) · 20 produits suivis",
+  "lastCheck": "2026-09-27T12:15:00+02:00",
+  "lastResult": "Aucune nouveauté depuis la dernière vérification · 20 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
    "pokeindex.fr",
    "chocobonplan.com",
    "lecrocodeal.com",
-   "boostacote.app",
    "journaldugeek.com",
    "presse JCC"
   ]
