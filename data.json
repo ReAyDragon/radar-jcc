@@ -1,18 +1,29 @@
 {
- "generatedAt": "2026-09-26T23:48:20+00:00",
+ "generatedAt": "2026-09-27T00:50:34+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T09:15:00+02:00",
-  "lastResult": "Aucune nouveauté · 19 produits suivis",
+  "lastCheck": "2026-09-27T10:30:00+02:00",
+  "lastResult": "1 nouveau produit · 20 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
    "pokeindex.fr",
    "chocobonplan.com",
+   "lecrocodeal.com",
    "boostacote.app",
    "presse JCC"
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "ajout",
+   "text": "Coffret Poster 30e Anniversaire ajouté : sorti le 16 septembre (3 boosters, poster et cartes promo Artikodin/Électhor/Sulfura), prix constaté 16,99 €."
+  },
+  {
+   "at": "2026-09-27T10:30:00+02:00",
+   "kind": "prix",
+   "text": "Désaccord de prix relevé sur la Collection Ultra-Premium 30e Anniversaire : 229,99 € selon Pokécardex, 239,99 € selon d'autres sources citant The Pokémon Company — à confirmer."
+  },
   {
    "at": "2026-09-27T01:16:00+02:00",
    "kind": "date",
@@ -115,6 +126,29 @@
     "Fnac",
     "Cultura",
     "Grandes surfaces",
+    "Amazon"
+   ]
+  },
+  {
+   "id": "30c-poster",
+   "addedAt": "2026-09-27T10:30:00+02:00",
+   "code": "30C",
+   "date": "2026-09-16",
+   "ean": "0196214147225",
+   "name": "Coffret Poster 30e Anniversaire",
+   "note": "3 boosters 30e Anniversaire, 3 cartes promo Artikodin/Électhor/Sulfura et un poster recto-verso réunissant les cartes de l'extension. Produit qui manquait au suivi, sorti en même temps que l'ETB et l'extension le 16 septembre.",
+   "price": 16.99,
+   "set": "30e Anniversaire",
+   "source": "https://lecrocodeal.com/coffret-poster-pokemon-30-ans-ou-commander",
+   "sourceName": "Le CrocoDeal",
+   "status": "sorti",
+   "type": "Coffret",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Grandes surfaces",
+    "Fnac",
+    "Cultura",
     "Amazon"
    ]
   },
@@ -413,7 +447,7 @@
    "code": "30C",
    "date": "2026-11-06",
    "name": "Collection Ultra-Premium 30e Anniversaire (Journée / Soirée)",
-   "note": "29 boosters + 1 booster Collection Classique. Version Journée (Mentali) ou Soirée (Noctali). Souvent vendue sur invitation.",
+   "note": "29 boosters + 1 booster Collection Classique. Version Journée (Mentali) ou Soirée (Noctali). Souvent vendue sur invitation. Désaccord de prix relevé entre sources : 229,99 € selon Pokécardex (retenu ici), 239,99 € selon d'autres sites citant The Pokémon Company — à confirmer.",
    "price": 229.99,
    "searchQuery": "collection ultra premium pokemon 30e anniversaire",
    "set": "30e Anniversaire",
@@ -422,7 +456,7 @@
    "status": "annonce",
    "trackUrl": "https://chocobonplan.com/bons-plans/cartes-a-jouer/cartes-pokemon/coffret-ultra-premium-pokemon-30eme-anniversaire",
    "type": "Coffret Ultra-Premium",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-09-27T10:30:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
