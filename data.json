@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-09-27T02:47:21+00:00",
+ "generatedAt": "2026-09-27T03:48:08+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T10:30:00+02:00",
-  "lastResult": "Aucune nouveauté · 20 produits suivis",
+  "lastCheck": "2026-09-27T11:00:00+02:00",
+  "lastResult": "1 confirmation (prix UPC 30e Anniversaire) · 20 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
@@ -10,10 +10,17 @@
    "chocobonplan.com",
    "lecrocodeal.com",
    "boostacote.app",
+   "journaldugeek.com",
    "presse JCC"
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-27T11:00:00+02:00",
+   "kind": "confirmation",
+   "productId": "30c-upc",
+   "text": "Prix de la Collection Ultra-Premium 30e Anniversaire confirmé officiellement à 229,99 € (pokemon.com/fr, Journal du Geek) : le désaccord avec 239,99 € est résolu."
+  },
   {
    "at": "2026-09-27T02:49:00+02:00",
    "kind": "ajout",
@@ -460,16 +467,16 @@
    "code": "30C",
    "date": "2026-11-06",
    "name": "Collection Ultra-Premium 30e Anniversaire (Journée / Soirée)",
-   "note": "29 boosters + 1 booster Collection Classique. Version Journée (Mentali) ou Soirée (Noctali). Souvent vendue sur invitation. Désaccord de prix relevé entre sources : 229,99 € selon Pokécardex (retenu ici), 239,99 € selon d'autres sites citant The Pokémon Company — à confirmer.",
+   "note": "29 boosters + 1 booster Collection Classique. Version Journée (Mentali) ou Soirée (Noctali). Prix officiel confirmé à 229,99 € par pokemon.com/fr et la presse (Journal du Geek) — le désaccord avec le montant de 239,99 € parfois cité est résolu, 229,99 € est le bon prix conseillé. Souvent vendue sur invitation.",
    "price": 229.99,
    "searchQuery": "collection ultra premium pokemon 30e anniversaire",
    "set": "30e Anniversaire",
    "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
    "sourceName": "Pokécardex",
-   "status": "annonce",
+   "status": "officiel",
    "trackUrl": "https://chocobonplan.com/bons-plans/cartes-a-jouer/cartes-pokemon/coffret-ultra-premium-pokemon-30eme-anniversaire",
    "type": "Coffret Ultra-Premium",
-   "updatedAt": "2026-09-27T02:49:00+02:00",
+   "updatedAt": "2026-09-27T11:00:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
