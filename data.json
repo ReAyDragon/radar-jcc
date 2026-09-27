@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-09-27T05:48:01+00:00",
+ "generatedAt": "2026-09-27T06:50:09+00:00",
  "veille": {
-  "lastCheck": "2026-09-27T07:47:24+02:00",
+  "lastCheck": "2026-09-27T08:52:00+02:00",
   "lastResult": "Aucune nouveauté ce matin · 20 produits suivis",
   "sources": [
    "pokemon.com/fr",
@@ -10,6 +10,7 @@
    "chocobonplan.com",
    "lecrocodeal.com",
    "journaldugeek.com",
+   "pokedrop.fr",
    "presse JCC"
   ]
  },
