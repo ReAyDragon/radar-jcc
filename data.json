@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-09-28T15:47:39+00:00",
+ "generatedAt": "2026-09-28T16:50:19+00:00",
  "veille": {
-  "lastCheck": "2026-09-28T17:47:20+02:00",
-  "lastResult": "Rien de nouveau confirmé · 21 produits suivis (accès direct aux pages boutiques/comparateurs toujours bloqué depuis cet environnement ; restock Micromania ETB 30e Anniversaire confirmé toujours prévu le 5 octobre ; aucun ME07 annoncé)",
+  "lastCheck": "2026-09-28T18:05:00+02:00",
+  "lastResult": "Rien de nouveau confirmé · 21 produits suivis (accès direct WebFetch bloqué par le proxy réseau ; recherche de 2nde main via WebSearch seulement : aucune précommande FR confirmée pour l'ETB Règne Delta ni pour Bundle/mini-boîtes 30e Anniversaire ; retour de stock Micromania ETB 30e Anniversaire toujours annoncé le 05/10 ; prochain set après Règne Delta encore sans date FR — au Japon, Aura Seeker/M7 sort le 27/11/26, version internationale évoquée pour début 2027 sans confirmation)",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
