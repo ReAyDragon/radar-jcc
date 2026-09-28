@@ -1,20 +1,33 @@
 {
- "generatedAt": "2026-09-28T08:48:32+00:00",
+ "generatedAt": "2026-09-28T09:01:13+00:00",
  "veille": {
-  "lastCheck": "2026-09-28T11:30:00+02:00",
-  "lastResult": "Aucune nouveauté · 20 produits suivis (accès direct aux sites boutiques et trackers toujours bloqué ; recherche web seule utilisée — rien de neuf par rapport au dernier passage de ce matin)",
+  "lastCheck": "2026-09-28T11:00:00+02:00",
+  "lastResult": "2 nouveautés · 21 produits suivis (Display Règne Delta ajouté, Deck Combat 30 ans confirmé officiel ; accès direct boutiques toujours bloqué, recherche web seule)",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
    "pokeindex.fr",
    "chocobonplan.com",
    "lecrocodeal.com",
+   "pokemael.com",
    "journaldugeek.com",
-   "pokebip.com",
+   "pokecop.com",
    "presse JCC"
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-28T11:00:00+02:00",
+   "kind": "ajout",
+   "productId": "me06-display",
+   "text": "Display 36 boosters Règne Delta (ME06) ajouté au suivi : sortie le 6 novembre, prix conseillé 215,64 €."
+  },
+  {
+   "at": "2026-09-28T11:00:00+02:00",
+   "kind": "confirmation",
+   "productId": "30c-deck-combat",
+   "text": "Deck Combat 30e Anniversaire Mentali-ex/Noctali-ex : statut passé à officiel, fiche produit dédiée publiée sur pokemon.com/fr."
+  },
   {
    "at": "2026-09-27T11:00:00+02:00",
    "kind": "confirmation",
@@ -376,15 +389,15 @@
    "code": "30C",
    "date": "2026-10-30",
    "name": "Deck Combat 30e Anniversaire Mentali-ex / Noctali-ex",
-   "note": "Deck prêt à jouer de 60 cartes brillantes, promo Victini ou Zeraora. Deux modèles. Prix conseillé revu à 24,99 € sur Pokécardex.",
+   "note": "Deck prêt à jouer de 60 cartes brillantes, promo Victini ou Zeraora. Deux modèles. Date du 30 octobre confirmée officielle : fiche produit dédiée publiée sur pokemon.com/fr. Prix conseillé 24,99 €.",
    "price": 24.99,
    "searchQuery": "deck combat pokemon 30e anniversaire",
    "set": "30e Anniversaire",
-   "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
-   "sourceName": "Pokécardex",
-   "status": "annonce",
+   "source": "https://www.pokemon.com/fr/jcc-pokemon/galerie-produits/deck-combat-30-anniversaire-mentali-ex-et-deck-combat-30-anniversaire-noctali-ex",
+   "sourceName": "pokemon.com/fr",
+   "status": "officiel",
    "type": "Deck",
-   "updatedAt": "2026-09-27T00:38:00+02:00",
+   "updatedAt": "2026-09-28T11:00:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -481,6 +494,29 @@
     "Boutiques JCC spécialisées",
     "Fnac",
     "Amazon (sur invitation)"
+   ]
+  },
+  {
+   "id": "me06-display",
+   "addedAt": "2026-09-28T11:00:00+02:00",
+   "code": "ME06",
+   "date": "2026-11-06",
+   "name": "Display 36 boosters Règne Delta",
+   "note": "36 boosters Règne Delta, 360 cartes avant doublons. Produit qui manquait au suivi (repéré via plusieurs boutiques et comparateurs).",
+   "price": 215.64,
+   "searchQuery": "display 36 boosters pokemon regne delta",
+   "set": "Méga-Évolution : Règne Delta",
+   "source": "https://chocobonplan.com/index.php/bons-plans/cartes-a-jouer/cartes-pokemon/display-36-boosters-regne-delta-me06",
+   "sourceName": "ChocoBonPlan",
+   "status": "annonce",
+   "trackUrl": "https://chocobonplan.com/index.php/bons-plans/cartes-a-jouer/cartes-pokemon/display-36-boosters-regne-delta-me06",
+   "type": "Display",
+   "updatedAt": "2026-09-28T11:00:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Fnac",
+    "Cultura",
+    "Amazon"
    ]
   },
   {
