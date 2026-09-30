@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-09-29T23:47:00+00:00",
+ "generatedAt": "2026-09-30T00:47:33+00:00",
  "veille": {
-  "lastCheck": "2026-09-29T08:00:00+02:00",
-  "lastResult": "Rien de nouveau · 21 produits suivis (aucune extension annoncée au-delà de ME06)",
+  "lastCheck": "2026-09-30T08:00:00+02:00",
+  "lastResult": "1 nouveauté · 22 produits suivis (Boîtier Stratégies et Combats Règne Delta)",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
@@ -17,6 +17,12 @@
   ]
  },
  "journal": [
+  {
+   "at": "2026-09-30T08:00:00+02:00",
+   "kind": "ajout",
+   "productId": "me06-boitier-strategies",
+   "text": "Ajout du Boîtier Stratégies et Combats Règne Delta (24/10, avec les avant-premières)."
+  },
   {
    "at": "2026-09-28T16:30:00+02:00",
    "kind": "info",
@@ -412,6 +418,26 @@
    "updatedAt": "2026-09-26T17:06:00+02:00",
    "where": [
     "Boutiques indépendantes participantes (Play! Pokémon)"
+   ]
+  },
+  {
+   "id": "me06-boitier-strategies",
+   "addedAt": "2026-09-30T08:00:00+02:00",
+   "code": "ME06",
+   "date": "2026-10-24",
+   "name": "Boîtier Stratégies et Combats Méga-Évolution – Règne Delta",
+   "note": "1 carte promo, 1 deck de 40 cartes prêt à jouer et 4 boosters ; disponible à partir des avant-premières du 24/10, avant l'extension du 06/11. Prix non communiqué.",
+   "price": null,
+   "searchQuery": "boitier strategies et combats pokemon regne delta",
+   "set": "Méga-Évolution – Règne Delta",
+   "source": "https://www.pokemon.com/fr/actualites/participez-a-un-evenement-davant-premiere-pour-lextension-mega-evolution-regne-delta-du-jcc-pokemon",
+   "sourceName": "pokemon.com/fr",
+   "status": "annonce",
+   "type": "Coffret",
+   "updatedAt": "2026-09-30T08:00:00+02:00",
+   "where": [
+    "Boutiques JCC spécialisées",
+    "Événements d'avant-première"
    ]
   },
   {
