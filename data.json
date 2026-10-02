@@ -1,8 +1,8 @@
 {
- "generatedAt": "2026-10-02T05:46:50+00:00",
+ "generatedAt": "2026-10-02T06:47:07+00:00",
  "veille": {
   "lastCheck": "2026-10-02T08:00:00+02:00",
-  "lastResult": "Rien de nouveau · 22 produits suivis · sorties aujourd'hui 02/10",
+  "lastResult": "3 produits passés en sorti (02/10) · 22 produits suivis",
   "sources": [
    "pokemon.com/fr",
    "pokecardex.com",
@@ -17,6 +17,24 @@
   ]
  },
  "journal": [
+  {
+   "at": "2026-10-02T08:00:00+02:00",
+   "kind": "info",
+   "productId": "30c-bundle",
+   "text": "Lot de boosters 30e Anniversaire : sorti aujourd'hui (02/10)."
+  },
+  {
+   "at": "2026-10-02T08:00:00+02:00",
+   "kind": "info",
+   "productId": "30c-mini-boites",
+   "text": "Mini-boîtes 30e Anniversaire : sorties aujourd'hui (02/10)."
+  },
+  {
+   "at": "2026-10-02T08:00:00+02:00",
+   "kind": "info",
+   "productId": "duopack-oct-2026",
+   "text": "Duopack d'octobre : sorti aujourd'hui (02/10)."
+  },
   {
    "at": "2026-09-30T08:00:00+02:00",
    "kind": "ajout",
@@ -347,10 +365,10 @@
    "set": "30e Anniversaire",
    "source": "https://www.pokeindex.fr/calendrier-sorties",
    "sourceName": "Pokéindex",
-   "status": "annonce",
+   "status": "sorti",
    "trackUrl": "https://lecrocodeal.com/bundle-6-boosters-pokemon-30-ans-ou-commander",
    "type": "Bundle",
-   "updatedAt": "2026-09-28T16:30:00+02:00",
+   "updatedAt": "2026-10-02T08:00:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Fnac",
@@ -370,10 +388,10 @@
    "set": "30e Anniversaire",
    "source": "https://www.pokeindex.fr/calendrier-sorties",
    "sourceName": "Pokéindex",
-   "status": "annonce",
+   "status": "sorti",
    "trackUrl": "https://lecrocodeal.com/mini-tins-pokemon-30e-anniversaire",
    "type": "Mini-boîtes",
-   "updatedAt": "2026-09-26T17:30:00+02:00",
+   "updatedAt": "2026-10-02T08:00:00+02:00",
    "where": [
     "Boutiques JCC spécialisées",
     "Grandes surfaces",
@@ -393,9 +411,9 @@
    "set": "Méga-Évolution",
    "source": "https://www.pokecardex.com/forums/viewtopic.php?t=49894",
    "sourceName": "Pokécardex",
-   "status": "annonce",
+   "status": "sorti",
    "type": "Pack",
-   "updatedAt": "2026-09-27T01:16:00+02:00",
+   "updatedAt": "2026-10-02T08:00:00+02:00",
    "where": [
     "Grandes surfaces",
     "Boutiques JCC spécialisées"
